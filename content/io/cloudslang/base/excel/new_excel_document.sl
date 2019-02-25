@@ -1,16 +1,29 @@
+#   (c) Copyright 2019 EntIT Software LLC, a Micro Focus company, L.P.
+#   All rights reserved. This program and the accompanying materials
+#   are made available under the terms of the Apache License v2.0 which accompany this distribution.
+#
+#   The Apache License is available at
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+#
 ########################################################################################################################
 #!!
-#! @description: Creates a blank Excel spreadsheet document. The format of the document
-#! (XLS or XLSX) depends on the extension used by the file.
+#! @description: Creates a blank Excel spreadsheet document. The format of the document (XLS or XLSX) depends on the
+#!               extension used by the file.
 #!
 #! @input excel_file_name: The absolute path to the new Excel document.
-#! Examples: c:\temp\test.xls
+#!                         Examples: c:\temp\test.xls
 #! @input worksheet_names: A delimited list of names that will be created as worksheets in the document. 
-#! Default value:
+#!                         Default value:
 #!                         Sheet1,Sheet2,Sheet3.
 #!                         Optional
 #! @input delimiter: The character used to delimit worksheet names.
-#! Default value: comma (,)
+#!                   Default value: comma (,)
 #!                   Optional
 #!
 #! @output return_result: This is the primary output. Returns a success or failure message.

@@ -1,35 +1,47 @@
+#   (c) Copyright 2019 EntIT Software LLC, a Micro Focus company, L.P.
+#   All rights reserved. This program and the accompanying materials
+#   are made available under the terms of the Apache License v2.0 which accompany this distribution.
+#
+#   The Apache License is available at
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+#
 ########################################################################################################################
 #!!
 #! @description: Retrieves the cell data with specified row index and column index in an Excel document. 
-#! XLS, XLSX and XLSM formats are supported. 
+#!               XLS, XLSX and XLSM formats are supported.
 #!
 #! @input excel_file_name: The absolute path to the new Excel document.
-#! Examples: c:\temp\test.xls
+#!                         Examples: c:\temp\test.xls
 #! @input worksheet_name: The name of Excel worksheet
 #!                        Optional
 #! @input has_header: If Yes, then the first row of the document is expected to be the header row. 
-#! Valid values: yes,
-#!                    no
-#! Default value: Yes
+#!                    Valid values: yes, no
+#!                    Default value: Yes
 #!                    Optional
 #! @input first_row_index: The index of the first row in the Excel worksheet, including the header row.
-#! Default value: 0
+#!                         Default value: 0
 #!                         Optional
 #! @input row_index: A list of row indexes.
-#! Examples: 1:3, 10, 15:20,25
-#! Default Value: from the index of the first row 
-#!                   to the index of the last row in the Excel worksheet.
+#!                   Examples: 1:3, 10, 15:20,25
+#!                   Default Value: from the index of the first row
+#!                                  to the index of the last row in the Excel worksheet.
 #!                   Optional
 #! @input column_index: A list of column indexes.
-#! Examples: 1:3, 10, 15:20,25
-#! Default value: from 0 to the index of the
-#!                      last column in the Excel worksheet.
+#!                      Examples: 1:3, 10, 15:20,25
+#!                      Default value: from 0 to the index of the
+#!                                     last column in the Excel worksheet.
 #!                      Optional
 #! @input row_delimiter: The delimiter used to separate the rows of the returnResult.
-#! Default value: | (pipe)
+#!                       Default value: | (pipe)
 #!                       Optional
 #! @input column_delimiter: The delimiter used to separate the columns of the returnResult.
-#! Default value: , (comma)
+#!                          Default value: , (comma)
 #!                          Optional
 #!
 #! @output return_result: This is the primary output. Returns the cell data retrieved from Excel document.

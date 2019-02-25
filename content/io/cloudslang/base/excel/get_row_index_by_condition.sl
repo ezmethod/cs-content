@@ -1,31 +1,41 @@
+#   (c) Copyright 2019 EntIT Software LLC, a Micro Focus company, L.P.
+#   All rights reserved. This program and the accompanying materials
+#   are made available under the terms of the Apache License v2.0 which accompany this distribution.
+#
+#   The Apache License is available at
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+#
 ########################################################################################################################
 #!!
 #! @description: Retrieves row indexes if the row satisfies the specified condition in an Excel document.
 #!               XLS, XLSX and XLSM formats are supported.
 #!
 #! @input excel_file_name: The absolute path to the new Excel document.
-#! Examples: c:\temp\test.xls
+#!                         Examples: c:\temp\test.xls
 #! @input worksheet_name: The name of Excel worksheet
 #!                        Optional
 #! @input has_header: If Yes, then the first row of the document is expected to be the header row. 
-#! Valid values: yes,
-#!                    no
-#! Default value: Yes
+#!                    Valid values: yes, no
+#!                    Default value: Yes
 #!                    Optional
 #! @input first_row_index: The index of the first row in the Excel worksheet, including the header row.
-#! Default value: 0
+#!                         Default value: 0
 #!                         Optional
 #! @input column_indexto_query: The column index to search in.
-#! @input operator: operator - The math operators. 
-#! Valid values: ==, != for string comparison; ==, !=, <,<=,>,>= for
-#!                  numeric comparison.
-#! Default vaue: ==
+#! @input operator: The math operators.
+#!                  Valid values: ==, != for string comparison; ==, !=, <,<=,>,>= for numeric comparison.
+#!                  Default value: ==
 #!                  Optional
 #! @input value: The value to search in the specified column. If left blank, it means an empty value.
 #!               Optional
 #!
-#! @output return_result: This is the primary result. Return a list of row indexes that satisfied the specified
-#!                        condition.
+#! @output return_result: This is the primary result. Return a list of row indices that satisfy the specified condition.
 #! @output return_code: 0 if success, -1 otherwise.
 #! @output exception: An error message in case there was an error while retrieving the row data.
 #! @output rows_count: The number of the row indexes returned.
